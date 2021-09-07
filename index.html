@@ -61,6 +61,10 @@
                     <div class="card-body text-dark">
                       <h5 class="card-title">확진자</h5>
                       <p class="card-text">
+			  <p id="합계"></p>
+			  <p id="국내발생"></p>
+			  <p id="해외발생"></p>
+			    
                           
                       </p>
                     </div>
@@ -115,6 +119,10 @@ let barChart = new Chart(myChartOne, {
     document.getElementById('검사중').innerHTML = '검사중 : ' + 검사중
     document.getElementById('검사결과').innerHTML = '검사결과 : ' + 검사결과
     document.getElementById('자가격리자').innerHTML = '자가격리자 : ' + 자가격리자
+    document.getElementById('합계').innerHTML = '합계 : ' + 합계
+    document.getElementById('국내발생').innerHTML = '국내발생 : ' + 국내발생
+    document.getElementById('해외발생').innerHTML = '해외발생 : ' + 
+	
     
 
 </script>		
