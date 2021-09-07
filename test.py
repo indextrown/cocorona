@@ -10,7 +10,7 @@ soup = BeautifulSoup(response.text, 'lxml')
 
 
 
-
+  
 
 
 
