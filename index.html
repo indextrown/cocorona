@@ -42,7 +42,15 @@
       <br>
 	<body style="text-align: center">
 	<h1> 코로나 19 상황판 </h1>
-<div class="container">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+		    <canvas id = "myChartOne"></canvas>                      
+                    </div>
+                </div>
+            </div>
+		
+	<div class="container">
         <div class="row">
             <div class="col-6">
                 <div class="card border-dark mb-3">
@@ -76,13 +84,6 @@
                 </div>
             </div>
         </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-		    <canvas id = "myChartOne"></canvas>                      
-                    </div>
-                </div>
-            </div>
 <script>
     document.getElementById('날짜').innerHTML = '날짜 : ' + 날짜
     document.getElementById('거리두기단계').innerHTML = '거리두기단계 : ' + 거리두기단계
