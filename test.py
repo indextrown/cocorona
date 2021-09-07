@@ -9,8 +9,19 @@ response = requests.get(url, verify = False)
 soup = BeautifulSoup(response.text, 'lxml')
 
 
+response1 = requests.get("http://ncov.mohw.go.kr/")
 
-  
+soup1 = BeautifulSoup(response1.text, 'lxml')
+
+
+a = soup1.select('span.data')[0].text.replace(',', '') #국내발생
+
+ 
+
+b = soup1.select('span.data')[1].text  #해외발생
+sum = int(a) + int(b)
+
+
 
 
 
@@ -23,6 +34,9 @@ soup = BeautifulSoup(response.text, 'lxml')
 검사결과 = soup.select("span.num1.ls3")[1].text
 자가격리자 = soup.select("span.num11")[0].text
 거리두기단계 = soup.select("div#notice1 > ul > li")[0].text
+국내발생 = soup1.select('span.data')[0].text.replace(',', '') #국내발생
+해외발생 = soup1.select('span.data')[1].text  #해외발생
+합계 = sum
 
 
 l = []
@@ -50,6 +64,9 @@ var 검사중 = '{검사중}';\n\
 var 검사결과 = '{검사결과}';\n\
 var 자가격리자 = '{자가격리자}';\n\
 var 거리두기단계 = '{거리두기단계}';\n\
+var 국내발생 = '{국내발생}';\n\
+var 해외발생 = '{해외발생}';\n\
+var 합계 = '{합계}';\n\
 " + final_data
 with open('data.js', "w", encoding="UTF-8-sig") as f_write:
     f_write.write(final_data) 
