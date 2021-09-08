@@ -36,8 +36,6 @@ sum = int(a) + int(b)
 거리두기단계 = soup.select("div#notice1 > ul > li")[0].text
 국내발생 = soup1.select('span.data')[0].text.replace(',', '') #국내발생
 해외발생 = soup1.select('span.data')[1].text  #해외발생
-합계 = sum
-날짜1 = soup1.select('span.livedate')[0].text
 
 l = []
 ##파일을 쓴다
@@ -67,7 +65,6 @@ var 거리두기단계 = '{거리두기단계}';\n\
 var 국내발생 = '{국내발생}';\n\
 var 해외발생 = '{해외발생}';\n\
 var 합계 = '{합계}';\n\
-var 날짜 = '{날짜1}';\n\
 " + final_data
 with open('data.js', "w", encoding="UTF-8-sig") as f_write:
     f_write.write(final_data) 
