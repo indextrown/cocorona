@@ -14,12 +14,6 @@ response1 = requests.get("http://ncov.mohw.go.kr/")
 soup1 = BeautifulSoup(response1.text, 'lxml')
 
 
-a = soup1.select('span.data')[0].text.replace(',', '') #국내발생
-
- 
-
-b = soup1.select('span.data')[1].text  #해외발생
-sum = int(a) + int(b)
 
 
 
