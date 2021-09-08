@@ -64,7 +64,6 @@ var 자가격리자 = '{자가격리자}';\n\
 var 거리두기단계 = '{거리두기단계}';\n\
 var 국내발생 = '{국내발생}';\n\
 var 해외발생 = '{해외발생}';\n\
-var 합계 = '{합계}';\n\
 " + final_data
 with open('data.js', "w", encoding="UTF-8-sig") as f_write:
     f_write.write(final_data) 
