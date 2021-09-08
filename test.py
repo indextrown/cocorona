@@ -34,8 +34,8 @@ sum = int(a) + int(b)
 검사결과 = soup.select("span.num1.ls3")[1].text
 자가격리자 = soup.select("span.num11")[0].text
 거리두기단계 = soup.select("div#notice1 > ul > li")[0].text
-국내발생 = soup1.select('span.data')[0].text.replace(',', '') #국내발생
-해외발생 = soup1.select('span.data')[1].text  #해외발생
+국내발생 = soup1.select('span.data')[0].text
+해외발생 = soup1.select('span.data')[1].text
 
 l = []
 ##파일을 쓴다
