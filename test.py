@@ -30,7 +30,7 @@ soup1 = BeautifulSoup(response1.text, 'lxml')
 거리두기단계 = soup.select("div#notice1 > ul > li")[0].text
 국내발생 = soup1.select('span.data')[0].text
 해외발생 = soup1.select('span.data')[1].text
-합계 = int(국내발생) + int(해외발생)
+합계 = int(국내발생.replace(',', '')) + int(해외발생.replace(',', ''))
 l = []
 ##파일을 쓴다
 import csv
