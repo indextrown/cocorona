@@ -7,6 +7,6 @@ smmap
 urllib3
 Flask
 urllib3
-heroku
-heroku3
 apscheduler
+selenium
+chromium-chromedriver
