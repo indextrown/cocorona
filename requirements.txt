@@ -9,4 +9,4 @@ Flask
 urllib3
 apscheduler
 selenium
-chromedriver
+chromedriver_autoinstaller
