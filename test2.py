@@ -19,5 +19,5 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_driver = os.path.join('chromedriver')
 
 wd = driver = webdriver.Chrome(chrome_driver, options=chrome_options)
-wd.get("http://www.naver.com")
-wd.get_screenshot_as_file("TEST.png")
+wd.get("http://ncov.mohw.go.kr/bdBoardList_Real.do")
+wd.get_screenshot_as_file("TEST1.png")
