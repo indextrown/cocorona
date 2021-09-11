@@ -16,7 +16,9 @@ jobs:
     - name: 3. 셀레니움 설정
       run: pip install selenium
     - name: 4. 환경 설정
-      run: pip install chromium-chromedriver 
+      run: apt install chromium-chromedriver
+    - name: 5. 크롬 설정
+      run: apt-get update # to update ubuntu to correctly run apt install 
     - name: 5. 파이썬 실행
       run: python test.py
     - name: Commit files
