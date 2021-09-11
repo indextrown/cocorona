@@ -4,7 +4,7 @@ from time import sleep
 url = "http://www.naver.com" 
 
 # chromedriver 
-driver = webdriver.Chrome("testt/chromedriver")
+driver = webdriver.Chrome("https://github.com/indextrown/testt/blob/main/chromedriver")
 driver.get(url)
 
 # adding the loading time.
