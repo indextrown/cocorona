@@ -8,7 +8,6 @@ wd = webdriver.Chrome('chromedriver', options=chrome_options)
 
 wd.get("http://www.naver.com")
 
-wd.get_screenshot_as_file("TEST.png")
+print(driver.current_url)
 
-from google.colab import files
-files.download("TEST.png")
+
