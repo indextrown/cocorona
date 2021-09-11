@@ -16,7 +16,7 @@ jobs:
     - name: 3. 셀레니움 설정
       run: pip install selenium
     - name: 4. 환경 설정
-      run: apt install chromium-chromedriver 
+      run: pip install chromium-chromedriver 
     - name: 5. 파이썬 실행
       run: python test.py
     - name: Commit files
