@@ -17,5 +17,4 @@ driver.save_screenshot("screenshot.png")
 driver.close()
 
 
-chromedriver
 
