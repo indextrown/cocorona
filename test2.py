@@ -1,13 +1,21 @@
 from selenium import webdriver
-chrome_options = webdriver.ChromeOptions()
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
+from time import sleep
 
-wd = webdriver.Chrome('chromedriver', options=chrome_options)
+url = "http://www.naver.com" 
 
-wd.get("http://www.naver.com")
+# chromedriver 
+driver = webdriver.Chrome("chromedriver")
+driver.get(url)
 
-print(driver.current_url)
+# adding the loading time.
+sleep(0.1)
 
+# chapture!
+driver.save_screenshot("screenshot.png")
+
+# 브라우저를 닫는다.
+driver.close()
+
+
+chromedriver
 
