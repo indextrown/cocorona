@@ -17,7 +17,16 @@ jobs:
       run: pip install selenium
     - name: 4. 환경 설정
       run: pip install chromedriver
-    - name: 5. 파이썬 실행
+    - name: 5.우분투 설정
+      run: |        
+        sudo apt-get install fonts-unfonts-core
+        sudo apt-get install fonts-unfonts-extra
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add        
+        sudo apt-get install google-chrome-stable    
+        wget https://chromedriver.storage.googleapis.com/2.44/chromedriver_linux64.zip
+        unzip ./chromedriver_linux64.zip
+        
+    - name: 6. 파이썬 실행
       run: python test.py
     - name: Commit files
       run: |
