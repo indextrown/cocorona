@@ -31,7 +31,7 @@ soup1 = BeautifulSoup(response1.text, 'lxml')
 국내발생 = soup1.select('span.data')[0].text
 해외발생 = soup1.select('span.data')[1].text
 합계 = int(국내발생.replace(',', '')) + int(해외발생.replace(',', ''))
-date = soup1.select("span.livedate")[0].text
+
 l = []
 ##파일을 쓴다
 import csv
@@ -60,7 +60,7 @@ var 거리두기단계 = '{거리두기단계}';\n\
 var 국내발생 = '{국내발생}';\n\
 var 해외발생 = '{해외발생}';\n\
 var 합계 = '{합계}';\n\
-var date = '{date}';\n\
+
 " + final_data
 with open('data.js', "w", encoding="UTF-8-sig") as f_write:
     f_write.write(final_data) 
