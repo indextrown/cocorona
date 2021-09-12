@@ -57,7 +57,7 @@ style="display: block; margin: 0 auto; width:400px; height:270px;"
                     <div class="card-body text-dark">
                       <h5 class="card-title">확진자</h5>
                       <p class="card-text">
-			  <p id="날짜"></p>
+			  <p id="date"></p>
 			  <p id="합계"></p>    
                           <p id="국내발생"></p>
 	          	  <p id="해외발생"></p>
@@ -121,7 +121,7 @@ let barChart = new Chart(myChartOne, {
     document.getElementById('국내발생').innerHTML = '국내발생 : ' + 국내발생
     document.getElementById('해외발생').innerHTML = '해외발생 : ' + 해외발생 
     document.getElementById('합계').innerHTML = '합계 : ' + 합계	
-    document.getElementById('date').innerHTML = '날짜 : ' + 날짜a
+    document.getElementById('date').innerHTML = 'date : ' + date
     
 	
     
