@@ -8,7 +8,7 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_driver = os.path.join('chromedriver')
 
 driver = webdriver.Chrome(chrome_driver, options=chrome_options)
-driver.get("http://ncov.mohw.go.kr/")
+driver.get("http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=13&ncvContSeq=&contSeq=&board_id=&gubun=")
 driver.get_screenshot_as_file("TEST4.png")
 element = driver.find_element_by_class_name("regional_patient_status_A")
 element_png = element.screenshot_as_png
