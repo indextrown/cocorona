@@ -10,7 +10,7 @@ chrome_driver = os.path.join('chromedriver')
 driver = webdriver.Chrome(chrome_driver, options=chrome_options)
 driver.get("http://ncov.mohw.go.kr/")
 driver.get_screenshot_as_file("TEST2.png")
-element = driver.find_element_by_class_name("regional_step_status")
+element = driver.find_element(By.ID, 'live_regional2')
 element_png = element.screenshot_as_png
 with open('TEST2.png', "wb") as file:
   file.write(element_png)
