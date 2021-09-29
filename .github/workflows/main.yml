@@ -26,9 +26,7 @@ jobs:
     - name: 7. 파이썬 실행4
       run: python test4.py  
     - name: 7. 파이썬 실행5
-      run: python test5.py   
-    - name: 8. 파이썬 실행6
-      run: python test6.py   
+      run: python test5.py     
     - name: Commit files
       run: |
         git config --local user.email "paullabkorea@gmail.com"
