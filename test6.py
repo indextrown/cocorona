@@ -9,7 +9,7 @@ chrome_driver = os.path.join('chromedriver')
 
 driver = webdriver.Chrome(chrome_driver, options=chrome_options)
 driver.get("https://www.jinju.go.kr/05190/05641.web")
-body.find_element_by_class_name("btn_more").click()
+checkbox = driver.find_element_by_class_name("layer_close").click()
 
 driver.get_screenshot_as_file("TEST6.png")
 element = driver.find_element_by_class_name("pr1")
