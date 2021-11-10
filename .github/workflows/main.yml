@@ -19,7 +19,7 @@ jobs:
       run: pip install chromedriver
     
     - name: 6. 파이썬 실행2
-      run: python test2.py
+      run: python crawl.py
     
  
       
