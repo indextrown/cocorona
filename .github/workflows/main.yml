@@ -20,8 +20,7 @@ jobs:
     
     - name: 6. 파이썬 실행2
       run: python test2.py
-    - name: 7. 파이썬 실행3
-      run: python test3.py
+    
     - name: 7. 파이썬 실행4
       run: python test4.py  
     - name: 7. 파이썬 실행5
